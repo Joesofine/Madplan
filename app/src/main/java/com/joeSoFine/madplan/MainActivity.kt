@@ -1,11 +1,10 @@
-package com.example.madplan
+package com.joeSoFine.madplan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
-import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     lateinit var myContainer: LinearLayout

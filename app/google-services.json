@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "217359994185",
+    "project_id": "madplan-4c49b",
+    "storage_bucket": "madplan-4c49b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217359994185:android:5b12d0e1dfcd312cc01e98",
+        "android_client_info": {
+          "package_name": "com.joeSoFine.madplan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217359994185-ikvdeqi3321esbtrouh358arkrh727fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCst4-WyQc9D--qk2CCe_aMcSH4tHAE4BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217359994185-ikvdeqi3321esbtrouh358arkrh727fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

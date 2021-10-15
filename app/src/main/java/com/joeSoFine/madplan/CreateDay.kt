@@ -1,10 +1,9 @@
-package com.example.madplan
+package com.joeSoFine.madplan
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 
 class CreateDay : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

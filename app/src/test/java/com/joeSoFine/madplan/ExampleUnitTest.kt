@@ -1,4 +1,4 @@
-package com.example.madplan
+package com.joeSoFine.madplan
 
 import org.junit.Test
 
