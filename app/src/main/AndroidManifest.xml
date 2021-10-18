@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Madplan">
         <activity android:name="com.joeSoFine.madplan.CreateDay"></activity>
-        <activity android:name="com.joeSoFine.madplan.MainActivity">
+        <activity android:name="com.joeSoFine.madplan.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

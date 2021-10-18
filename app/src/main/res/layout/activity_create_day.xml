@@ -10,23 +10,43 @@
         android:id="@+id/m3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Aftensmad"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/day"
+        app:layout_constraintTop_toBottomOf="@+id/mellem2" />
+
+    <EditText
+        android:id="@+id/mellem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:ems="10"
+        android:hint="Mellemmåltid"
         android:inputType="textPersonName"
-        android:text="Aftensmad"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/m2" />
 
     <EditText
-        android:id="@+id/day"
+        android:id="@+id/mellem1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Mellemmåltid"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/day"
+        app:layout_constraintTop_toBottomOf="@+id/m1" />
+
+    <EditText
+        android:id="@+id/day"
+        android:hint="Dag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Mandag"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,10 +54,10 @@
         android:id="@+id/m1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Morgenmad"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Morgenmad"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/day" />
 
@@ -45,12 +65,11 @@
         android:id="@+id/m2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:ems="10"
+        android:hint="Frokost"
         android:inputType="textPersonName"
-        android:text="Frokost"
         app:layout_constraintStart_toStartOf="@+id/day"
-        app:layout_constraintTop_toBottomOf="@+id/m1" />
+        app:layout_constraintTop_toBottomOf="@+id/mellem1" />
 
     <Button
         android:id="@+id/save"
@@ -60,5 +79,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/m3" />
+        app:layout_constraintTop_toBottomOf="@+id/mellem2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
