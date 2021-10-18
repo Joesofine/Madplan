@@ -52,6 +52,7 @@ fun readData(fireStoreCallback: FireStoreCallback) {
                     val documentDay: String = document.data["dayName"].toString()
                     list.add(documentDay)
                 }
+                //
                 fireStoreCallback.onCallback(list)
 
             } else {
