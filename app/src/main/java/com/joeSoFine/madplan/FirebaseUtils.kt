@@ -28,19 +28,6 @@ fun uploadData(collection: String, data: Day) {
             }
 }
 
-private suspend fun getListOfdays(): List<DocumentSnapshot> {
-    val snapshot = FirebaseUtils().fireStoreDatabase.collection("days").get().await()
-    return snapshot.documents
-}
-
-private suspend fun getDataFromFirestore() {
-    try {
-        val listOfdays = getListOfdays()
-    } catch (e: Exception) {
-        Log.d(TAG, e.message.toString()) //Don't ignore potential errors!
-    }
-}
-
 fun readData(fireStoreCallback: FireStoreCallback) {
     FirebaseUtils().fireStoreDatabase.collection("days")
         .get()
@@ -52,7 +39,6 @@ fun readData(fireStoreCallback: FireStoreCallback) {
                     val documentDay: String = document.data["dayName"].toString()
                     list.add(documentDay)
                 }
-                //
                 fireStoreCallback.onCallback(list)
 
             } else {
