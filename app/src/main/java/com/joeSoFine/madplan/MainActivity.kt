@@ -22,15 +22,12 @@ class MainActivity : AppCompatActivity() {
         val edit = findViewById<Button>(R.id.button)
 
         createDayCard()
-        readData("days") { p0 ->
-            p0?.forEach { document ->
-                Log.w(TAG, document.id)
+
+        readData(object: FireStoreCallback {
+            override fun onCallback(value: List<String>) {
+                Log.d("TAG", value.size.toString())
             }
-        }
-
-
-
-
+        })
 
 
 
