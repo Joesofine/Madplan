@@ -8,66 +8,80 @@
 
     <EditText
         android:id="@+id/m3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Aftensmad"
-        android:inputType="textPersonName"
+        android:inputType="textShortMessage|textMultiLine|textPersonName|textCapSentences"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/mellem2"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/mellem2" />
 
     <EditText
         android:id="@+id/mellem2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:ems="10"
         android:hint="Mellemmåltid"
-        android:inputType="textPersonName"
+        android:inputType="textShortMessage|textMultiLine|textPersonName|textCapSentences"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/m2"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/m2" />
 
     <EditText
         android:id="@+id/mellem1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Mellemmåltid"
-        android:inputType="textPersonName"
+        android:inputType="textShortMessage|textMultiLine|textPersonName|textCapSentences"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/m1"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/m1" />
 
     <EditText
         android:id="@+id/day"
-        android:hint="Dag"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Dag"
+        android:inputType="textShortMessage|textMultiLine|textPersonName|textCapSentences"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/m1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Morgenmad"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Morgenmad"
+        android:inputType="textShortMessage|textMultiLine|textPersonName|textCapSentences"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/day"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/day" />
 
     <EditText
         android:id="@+id/m2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Frokost"
-        android:inputType="textPersonName"
+        android:inputType="textShortMessage|textMultiLine|textPersonName|textCapSentences"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/mellem1"
         app:layout_constraintStart_toStartOf="@+id/day"
         app:layout_constraintTop_toBottomOf="@+id/mellem1" />
 

@@ -62,11 +62,15 @@ class MainActivity : AppCompatActivity() {
         var morgen: TextView = CardView.findViewById(R.id.morgenmad)
         var frokost: TextView = CardView.findViewById(R.id.frokost)
         var aften: TextView = CardView.findViewById(R.id.aftensmad)
+        var m1: TextView = CardView.findViewById(R.id.mellem1field)
+        var m2: TextView = CardView.findViewById(R.id.mellem2field)
 
         dayName.text = document.getString("dayName")
         morgen.text = document.getString("breakfast")
         frokost.text = document.getString("lunch")
         aften.text = document.getString("dinner")
+        m1.text = document.getString("snack1")
+        m2.text = document.getString("snack2")
 
         myContainer.addView(CardView)
     }
